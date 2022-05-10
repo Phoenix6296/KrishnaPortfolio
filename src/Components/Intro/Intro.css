@@ -1,0 +1,143 @@
+.intro {
+    height: 77vh;
+    display: flex;
+    margin-top: 6rem;
+}
+
+.i-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    gap: 2rem;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.i-name>:nth-child(2) {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.i-name>:nth-child(3) {
+    font-size: 17px;
+    font-weight: 100;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button {
+    width: 6rem;
+    height: 2rem;
+}
+
+.i-icons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.i-icons>*:hover {
+    cursor: pointer;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1) {
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+}
+
+.i-right>:nth-child(2) {
+    transform: scale(0.67);
+    left: -3rem;
+    top: -4.6rem;
+}
+
+.i-right>:nth-child(3) {
+    transform: scale(0.8);
+    left: 2%;
+    bottom: 2rem;
+}
+
+.i-right>:nth-child(4) {
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.floating-div:nth-of-type(1) {
+    left: 19rem !important;
+}
+
+/* Styling for Blur Divs */
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -18%;
+    left: 56;
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+        height: 50rem;
+        gap: 7rem;
+        margin-top: 2rem;
+    }
+
+    .i-right {
+        transform: scale(0.8);
+        left: -3rem;
+        gap: 0rem !important;
+    }
+
+    .i-right .blur {
+        display: none;
+    }
+
+    .floating-div:nth-of-type(1) {
+        top: -9rem !important;
+        left: 13rem !important;
+        z-index: -1;
+    }
+
+    .floating-div:nth-of-type(2) {
+        top: 11rem !important;
+        /* z-index: -1; */
+    }
+
+    .i-right img:nth-of-type(1) {
+        top: -8rem !important;
+    }
+
+    .i-right img:nth-of-type(2) {
+        top: -10.5rem !important;
+    }
+}

@@ -44,12 +44,13 @@ const Intro = () => {
             typeSpeed={120}
           />
           <span>
-            Front-end Developer with high level of expertise in field of web
-            designing and development, producting in the quality work
+            Eager to learn and implement new technologies and methodologies.
+            Always willing to innovate new things which can improve the existing
+            technology.
           </span>
         </div>
         <Link spy={true} to="Contact" smooth={true}>
-          <button className="button i-button">Hire Me</button>
+          <button className="button i-button">Contact Me</button>
         </Link>
 
         <div className="i-icons">

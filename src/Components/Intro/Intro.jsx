@@ -5,8 +5,8 @@ import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
-import Vector1 from "../../img/vector1.png";
-import Vector2 from "../../img/vector2.png";
+import Blob1 from "../../img/blueblob.png";
+import Blob2 from "../../img/yellowblob.png";
 import MyImage from "../../img/myimage.png";
 import Thumbsup from "../../img/thumbsup.png";
 import Crown from "../../img/crown.png";
@@ -73,8 +73,8 @@ const Intro = () => {
       </div>
 
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
+        <img src={Blob1} alt="" id="blob1" />
+        <img src={Blob2} alt="" id="blob2" />
         <img src={MyImage} alt="" />
         <motion.img
           initial={{ left: "-36%" }}

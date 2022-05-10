@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Instagram from "@iconscout/react-unicons/icons/uil-instagram";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
@@ -62,12 +60,6 @@ const Intro = () => {
           </a>
           <a href="https://twitter.com/Krishna49862681">
             <Twitter color="var(--orange)" size="3rem" />
-          </a>
-          <a href="https://www.instagram.com/iamkrishnabiswakarma/">
-            <Instagram color="var(--orange)" size="3rem" />
-          </a>
-          <a href="https://www.facebook.com/I.KrishnaBishwakarma">
-            <Facebook color="var(--orange)" size="3rem" />
           </a>
         </div>
       </div>

@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f812a56f.css",
+    "main.js": "/static/js/main.6899072c.js",
+    "static/media/college.png": "/static/media/college.f4dd7a5efc1ac5be7cc7.png",
+    "static/media/netflix.png": "/static/media/netflix.0e838144ae4f63a74802.png",
+    "static/media/blackjack.png": "/static/media/blackjack.7fa1b22d51684cbd5664.png",
+    "static/media/coronavirus.png": "/static/media/coronavirus.f2ecbf83c63ccd040d44.png",
+    "static/media/myimage.png": "/static/media/myimage.93e800abcbf95e167b3c.png",
+    "static/media/mitrajit.png": "/static/media/mitrajit.a8e98e9769f3c2d57e62.png",
+    "static/media/tictactoe.png": "/static/media/tictactoe.dc4c3e01a9ab2e737a13.png",
+    "static/media/Resume.pdf": "/static/media/Resume.aafc442f70977bf249a1.pdf",
+    "static/media/sharenetic.png": "/static/media/sharenetic.32ba94659f657fc35ecf.png",
+    "static/media/glassesemoji.png": "/static/media/glassesemoji.a08bdab12e8eb56a6874.png",
+    "static/media/privatechattingapp.png": "/static/media/privatechattingapp.a0d86efb97cfc6006060.png",
+    "static/media/firebase.png": "/static/media/firebase.6ea3b0b39b97b0e49515.png",
+    "static/media/thumbsup.png": "/static/media/thumbsup.e06790ba656f0397cbe5.png",
+    "static/media/sudeep.jpeg": "/static/media/sudeep.cc70c8f4d192740019f8.jpeg",
+    "static/media/humble.png": "/static/media/humble.c8b32b53675e68978981.png",
+    "static/media/heartemoji.png": "/static/media/heartemoji.26b1b6ed5e0e44083b28.png",
+    "static/media/wave.png": "/static/media/wave.fdfef4069ad90f610990.png",
+    "static/media/crown.png": "/static/media/crown.dbe416beae9b49b842ab.png",
+    "static/media/vector2.png": "/static/media/vector2.28db5bfd58081dd1df1b.png",
+    "static/media/glasses.png": "/static/media/glasses.71d7c1b0ff0b870a9d7d.png",
+    "static/media/kushankur.jpeg": "/static/media/kushankur.2dbe8066d449e602f1a3.jpeg",
+    "index.html": "/index.html",
+    "main.f812a56f.css.map": "/static/css/main.f812a56f.css.map",
+    "main.6899072c.js.map": "/static/js/main.6899072c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f812a56f.css",
+    "static/js/main.6899072c.js"
+  ]
+}

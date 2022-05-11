@@ -24,18 +24,17 @@ const Intro = () => {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}>Hi! I am </span>
+          <span style={{ color: darkMode ? "white" : ""}}>Hi! I am </span>
           <TypeWriterEffect
             textStyle={{
               fontWeight: "bold",
               fontSize: "2rem",
             }}
-            startDelay={2000}
             cursorColor="#3F3D56"
             multiText={[
               "Krishna Biswakarma.",
               "an Upcoming Engineer.",
-              "a Front-End Web Developer.",
+              "a Web Developer.",
               "Krishna Biswakarma.",
             ]}
             nextTextDelay={2000}

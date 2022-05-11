@@ -108,9 +108,14 @@
 @media screen and (max-width: 480px) {
     .intro {
         flex-direction: column;
-        height: 50rem;
+        height: 55rem;
         gap: 7rem;
         margin-top: 2rem;
+    }
+
+    .react-typewriter-text,
+    .i-name>:nth-child(1) {
+        font-size: 1.7rem !important;
     }
 
     .i-right {

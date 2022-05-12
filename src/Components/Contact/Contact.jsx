@@ -48,18 +48,21 @@ const Contact = () => {
             name="user_name"
             className="user"
             placeholder="Name"
+            required
           />
           <input
             type="email"
             name="user_email"
             className="user"
             placeholder="Email"
+            required
           />
           <textarea
             type="message"
             name="message"
             className="user"
             placeholder="Message"
+            required
           />
           <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for contacting!"}</span>

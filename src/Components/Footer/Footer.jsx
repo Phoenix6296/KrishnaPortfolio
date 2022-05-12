@@ -36,6 +36,7 @@ const Footer = () => {
         <Link spy={true} to="Navbar" smooth={true} id="top-arrow">
           <Top color="white" size="3rem" />
         </Link>
+        <span>Made with &hearts; by Krishna Biswakarma</span>
       </div>
     </div>
   );

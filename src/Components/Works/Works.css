@@ -1,8 +1,9 @@
 .works {
     padding: 0rem 3rem;
     display: flex;
-    height: 90vh;
+    height: 70vh;
     margin-top: 4rem;
+    padding-top: 3rem;
 }
 
 .w-details {

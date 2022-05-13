@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    height: 30vh;
     margin-bottom: 8rem;
 }
 
@@ -48,7 +47,6 @@
 @media screen and (max-width: 480px) {
     .experience {
         gap: 1rem;
-        height: 10vh;
     }
 
     .circle {

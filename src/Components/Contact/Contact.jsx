@@ -28,6 +28,17 @@ const Contact = () => {
         }
       );
   };
+
+  //Removing input from form after send button is pressed.
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  // const resetInputField = () => {
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  // };
+
   return (
     <div className="contact-form" id="Contact">
       <div className="w-left">
@@ -48,23 +59,40 @@ const Contact = () => {
             name="user_name"
             className="user"
             placeholder="Name"
+            value={name}
             required
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
           />
           <input
             type="email"
             name="user_email"
             className="user"
             placeholder="Email"
+            value={email}
             required
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
           />
           <textarea
             type="message"
             name="message"
             className="user"
             placeholder="Message"
+            value={message}
             required
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
           />
-          <input type="submit" value="Send" className="button" />
+          <input
+            type="submit"
+            value="Send"
+            className="button"
+            // onClick={resetInputField}
+          />
           <span>{done && "Thanks for contacting!"}</span>
           <div
             className="blur c-blur1"

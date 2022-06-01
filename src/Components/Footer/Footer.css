@@ -4,6 +4,7 @@
     margin: -0.5rem -3.5rem;
     position: relative;
     margin-top: -7rem;
+    z-index: -1;
 }
 
 .f-content {
@@ -29,14 +30,30 @@
 
 
 @media screen and (max-width: 480px) {
-    .footer{
+    .footer {
         margin-top: 0 !important;
     }
-    .footer>img{
+
+    .footer>img {
         transform: scale(2);
     }
-    .f-content{
+
+    .f-content {
         transform: scale(0.5);
         margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .footer {
+        height: 18rem;
+    }
+
+    .f-content {
+        margin-top: 17rem;
+    }
+
+    .footer>img {
+        margin-top: 10rem;
     }
 }

@@ -14,8 +14,6 @@ import HTML from "../../img/html.png";
 import Tailwind from "../../img/tailwind.png";
 import TS from "../../img/ts.png";
 
-// import TS from "../../img/ts.png";
-
 const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;

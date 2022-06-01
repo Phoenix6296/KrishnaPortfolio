@@ -71,6 +71,7 @@
     background: none;
     box-shadow: var(--smboxShadow);
     background: white;
+    overflow: hidden;
 }
 
 .w-secCircle>img {

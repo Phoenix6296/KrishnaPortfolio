@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
-import "./Services.css";
+import "./About.css";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
-import Card from "../Card/Card";
+import Card from "./Card/Card";
 import Resume from "./Resume.pdf";
 import { themeContext } from "../../Context";
 // import { motion } from "framer-motion";
 
-const Services = () => {
+const About = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   // const transition = { duration: 1, type: "spring" };
@@ -61,9 +61,7 @@ const Services = () => {
           <Card
             image={Glasses}
             heading={"Programming"}
-            details={
-              "C++, C, Python, Java, Competitive Programming."
-            }
+            details={"C++, C, Python, Java, Competitive Programming."}
           />
         </div>
         <div style={{ left: "14rem", top: "19rem" }}>
@@ -82,4 +80,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default About;

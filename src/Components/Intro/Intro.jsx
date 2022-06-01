@@ -9,7 +9,7 @@ import MyImage from "../../img/myimage.png";
 import Thumbsup from "../../img/thumbsup.png";
 import Crown from "../../img/crown.png";
 import Glassesemoji from "../../img/glassesemoji.png";
-import FloatingDiv from "../FloatingDiv/FloatingDiv";
+import FloatingDiv from "./FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";

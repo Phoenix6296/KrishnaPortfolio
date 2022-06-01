@@ -6,7 +6,7 @@ import ReactJS from "@iconscout/react-unicons/icons/uil-react";
 import HTML from "@iconscout/react-unicons/icons/uil-html5";
 import JS from "@iconscout/react-unicons/icons/uil-java-script";
 import CSS from "@iconscout/react-unicons/icons/uil-css3-simple";
-import Firebase from "../../img/firebase.png";
+import Bootstrap from "../../img/bootstrap.png";
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -51,7 +51,7 @@ const Works = () => {
             <JS color="black" size="3rem" />
           </div>
           <div className="w-secCircle" style={{ background: "#2D394A" }}>
-            <img src={Firebase} alt="" />
+            <img src={Bootstrap} alt="" />
           </div>
           <div className="w-secCircle" style={{ background: "#264BDD" }}>
             <CSS color="black" size="3rem" />

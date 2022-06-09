@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     margin: -0.5rem -3.5rem;
-    position: relative;
-    margin-top: -7rem;
+    /* position: relative; */
+    margin-top: -10rem;
     z-index: -1;
 }
 
@@ -41,6 +41,7 @@
     .f-content {
         transform: scale(0.5);
         margin-bottom: 6rem;
+        left: 0rem;
     }
 }
 

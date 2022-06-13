@@ -24,7 +24,7 @@ const Intro = () => {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : ""}}>Hi! I am </span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hi! I am </span>
           <TypeWriterEffect
             textStyle={{
               fontWeight: "bold",

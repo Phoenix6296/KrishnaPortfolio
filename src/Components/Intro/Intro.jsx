@@ -3,9 +3,9 @@ import "./Intro.css";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
-import Blob1 from "../../img/blueblob.png";
-import Blob2 from "../../img/yellowblob.png";
-import MyImage from "../../img/myimage.png";
+// import Blob1 from "../../img/blueblob.png";
+// import Blob2 from "../../img/yellowblob.png";
+import MyImage from "../../img/myImage.png";
 import Thumbsup from "../../img/thumbsup.png";
 import Crown from "../../img/crown.png";
 import Glassesemoji from "../../img/glassesemoji.png";
@@ -64,11 +64,11 @@ const Intro = () => {
       </div>
 
       <div className="i-right">
-        <img src={Blob1} alt="" id="blob1" />
-        <img src={Blob2} alt="" id="blob2" />
+        {/* <img src={Blob1} alt="" id="blob1" />
+        <img src={Blob2} alt="" id="blob2" /> */}
         <img src={MyImage} alt="" />
         <motion.img
-          initial={{ left: "-36%" }}
+          initial={{ left: "-20%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
           src={Glassesemoji}
@@ -76,7 +76,7 @@ const Intro = () => {
           className="floating-div"
         />
         <motion.div
-          initial={{ top: "-4%", left: "74%" }}
+          initial={{ top: "-20%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
           style={{ top: "-4%", left: "62%" }}

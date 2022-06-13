@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -11,6 +11,12 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false);
+  useEffect(() => {
+    setTimeout(function () {
+      setDone(false);
+    }, 10000);
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -99,7 +105,7 @@ const Contact = () => {
             className="button"
             onClick={audioPlay}
           />
-          <span>{done && "Thanks for contacting!"}</span>
+          {done ? <span>{"Thanks for contacting!"}</span> : <></>}
 
           <div
             className="blur c-blur1"

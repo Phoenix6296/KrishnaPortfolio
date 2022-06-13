@@ -19,7 +19,9 @@ const Company = (props) => {
         <span>
           COMPANY NAME -{" "}
           <span>
-            <a href={props.link}>{props.cName}</a>
+            <a href={props.link} target="_blank" rel="noreferrer">
+              {props.cName}
+            </a>
           </span>
         </span>
         <ul className="w-details">

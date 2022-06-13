@@ -72,7 +72,7 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <a
-            href="https://github.com/Phoenix6296/Haldia-Institute-of-Technology-Clone-Website"
+            href="https://phoenix6296.github.io/Haldia-Institute-of-Technology-Clone-Website/"
             target="_blank"
             rel="noreferrer"
           >

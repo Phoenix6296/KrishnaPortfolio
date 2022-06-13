@@ -17,19 +17,39 @@ const Footer = () => {
         <span>krishnabiswakarm2001@gmail.com</span>
         {/* <span>+91-6296579878</span> */}
         <div className="f-icons">
-          <a href="https://github.com/Phoenix6296">
+          <a
+            href="https://github.com/Phoenix6296"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Github color="white" size="3rem" />
           </a>
-          <a href="https://www.linkedin.com/in/iamkrishnabiswakarma/">
+          <a
+            href="https://www.linkedin.com/in/iamkrishnabiswakarma/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Linkedin color="white" size="3rem" />
           </a>
-          <a href="https://www.instagram.com/iamkrishnabiswakarma/">
+          <a
+            href="https://www.instagram.com/iamkrishnabiswakarma/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Instagram color="white" size="3rem" />
           </a>
-          <a href="https://twitter.com/Krishna49862681">
+          <a
+            href="https://twitter.com/Krishna49862681"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Twitter color="white" size="3rem" />
           </a>
-          <a href="https://www.facebook.com/I.KrishnaBishwakarma">
+          <a
+            href="https://www.facebook.com/I.KrishnaBishwakarma"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Facebook color="white" size="3rem" />
           </a>
         </div>

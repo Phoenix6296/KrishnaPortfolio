@@ -51,13 +51,25 @@ const Intro = () => {
         </Link>
 
         <div className="i-icons">
-          <a href="https://github.com/Phoenix6296">
+          <a
+            href="https://github.com/Phoenix6296"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Github color="var(--orange)" size="3rem" />
           </a>
-          <a href="https://www.linkedin.com/in/iamkrishnabiswakarma/">
+          <a
+            href="https://www.linkedin.com/in/iamkrishnabiswakarma/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Linkedin color="var(--orange)" size="3rem" />
           </a>
-          <a href="https://twitter.com/Krishna49862681">
+          <a
+            href="https://twitter.com/Krishna49862681"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Twitter color="var(--orange)" size="3rem" />
           </a>
         </div>

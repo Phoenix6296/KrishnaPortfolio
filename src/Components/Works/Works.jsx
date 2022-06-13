@@ -18,7 +18,7 @@ const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="awesome w-wrapper">
+    <div className="awesome w-wrapper" id="Internship">
       <span style={{ color: darkMode ? "white" : "" }}>Internship</span>
       <span>Experience</span>
       <Company

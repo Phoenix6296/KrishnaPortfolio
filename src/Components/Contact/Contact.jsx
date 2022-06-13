@@ -3,6 +3,8 @@ import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { themeContext } from "../../Context";
+import Click from "../../sounds/mouse-click.mp3";
+import validator from "validator";
 
 const Contact = () => {
   const theme = useContext(themeContext);
@@ -18,15 +20,9 @@ const Contact = () => {
         form.current,
         "lzx8H569iloDlauMD"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then(() => {
+        if (validateEmail()) setDone(true);
+      });
   };
 
   //Removing input from form after send button is pressed.
@@ -34,6 +30,21 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const validateEmail = () => {
+    if (validator.isEmail(email)) return true;
+    else return false;
+  };
+
+  let audio = new Audio(Click);
+  const audioPlay = () => {
+    if (name !== "" && validateEmail(email) !== false && message !== "") {
+      audio.play();
+      setDone(true);
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
+  };
   return (
     <div className="contact-form" id="Contact">
       <div className="w-left">
@@ -86,9 +97,10 @@ const Contact = () => {
             type="submit"
             value="Send"
             className="button"
-            // onClick={resetInputField}
+            onClick={audioPlay}
           />
           <span>{done && "Thanks for contacting!"}</span>
+
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple" }}

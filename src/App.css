@@ -11,13 +11,13 @@
 }
 
 * {
-
   font-family: 'Fredoka', sans-serif;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 20px;
   margin: 0;
+  -webkit-user-drag: none;
 }
 
 .App {

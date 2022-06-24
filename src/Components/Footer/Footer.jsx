@@ -32,7 +32,7 @@ const Footer = () => {
             <Linkedin color="white" size="3rem" />
           </a>
           <a
-            href="https://www.instagram.com/iamkrishnabiswakarma/"
+            href="https://www.instagram.com/krishnaa_kanha/"
             target="_blank"
             rel="noreferrer"
           >

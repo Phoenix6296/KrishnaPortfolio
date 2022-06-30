@@ -3,13 +3,17 @@ import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Sharenetic from "../../img/sharenetic.png";
 import TicTacToe from "../../img/tictactoe.png";
-import Netflix from "../../img/netflix.png";
 import Blackjack from "../../img/blackjack.png";
 import Coronavirus from "../../img/coronavirus.png";
-import College from "../../img/college.png";
-import PrivateChattingApp from "../../img/privatechattingapp.png";
 import "swiper/css";
 import { themeContext } from "../../Context";
+
+const data = [
+  "https://covid19resourcer.vercel.app/",
+  "https://mitrajit.github.io/Sharenetic/",
+  "https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/",
+  "https://phoenix6296.github.io/Blackjack-Card-Game/",
+];
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -25,69 +29,30 @@ const Portfolio = () => {
         grabCursor={true}
         className="portfolio-slider"
       >
-        <SwiperSlide>
-          <a
-            href="https://mitrajit.github.io/Sharenetic/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Sharenetic} alt="" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a
-            href="https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={TicTacToe} alt="" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a
-            href="https://netflix-clone6296.web.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Netflix} alt="" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a
-            href="https://phoenix6296.github.io/Blackjack-Card-Game/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Blackjack} alt="" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a
-            href="https://coronavirus-resource.web.app/hometreatment"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Coronavirus} alt="" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a
-            href="https://phoenix6296.github.io/Haldia-Institute-of-Technology-Clone-Website/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={College} alt="" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a
-            href="https://facebook-messenger-clone-9733.web.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={PrivateChattingApp} alt="" />
-          </a>
-        </SwiperSlide>
+        {data.map((item, index) => (
+          <SwiperSlide key={index}>
+            <a
+              href={item}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-link"
+            >
+              <img
+                src={
+                  item === "https://covid19resourcer.vercel.app/"
+                    ? Coronavirus
+                    : item === "https://mitrajit.github.io/Sharenetic/"
+                    ? Sharenetic
+                    : item ===
+                      "https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/"
+                    ? TicTacToe
+                    : Blackjack
+                }
+                alt="project"
+              />
+            </a>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

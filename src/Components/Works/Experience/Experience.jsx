@@ -1,24 +1,33 @@
 import React from "react";
 import "./Experience.css";
 
+const ach = [
+  {
+    text: "1",
+    title1: "Years",
+    title2: "Experience",
+  },
+  {
+    text: "5",
+    title1: "Completed",
+    title2: "Projects",
+  },
+  {
+    text: "2",
+    title1: "Startup",
+    title2: "Experience",
+  },
+];
 const Experience = () => {
   return (
     <div className="experience" id="Experiences">
-      <div className="achievements">
-        <div className="circle">1</div>
-        <span>Years </span>
-        <span>Experience</span>
-      </div>
-      <div className="achievements">
-        <div className="circle">5</div>
-        <span>Completed </span>
-        <span>Projects</span>
-      </div>
-      <div className="achievements">
-        <div className="circle">2</div>
-        <span>Startup</span>
-        <span>Experience</span>
-      </div>
+      {ach.map((item, index) => (
+        <div key={index} className="achievements">
+          <div className="circle">{item.text}</div>
+          <span>{item.title1}</span>
+          <span>{item.title2}</span>
+        </div>
+      ))}
     </div>
   );
 };

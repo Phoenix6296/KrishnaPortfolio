@@ -26,7 +26,7 @@ const Testimonials = () => {
       img: Sudeep,
       name: "Sudeep Deyondi",
       review:
-        "He has successfully undertaken and completed multiple projects and contributed significantly to success. His dedication to the team is quiet impressive.",
+        "He has successfully undertaken and completed multiple projects and contributed significantly to success. His dedication to the team is quiet impressive. He is a talented and highly motivated developer with can-do attitude.",
     },
   ];
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Company.css";
 import { motion } from "framer-motion";
-// import ReactJS from "@iconscout/react-unicons/icons/uil-react";
 
 const Company = (props) => {
   const Skill1 = props.skill1;

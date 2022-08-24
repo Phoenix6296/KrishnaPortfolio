@@ -3,8 +3,6 @@ import "./Intro.css";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
-// import Blob1 from "../../img/blueblob.png";
-// import Blob2 from "../../img/yellowblob.png";
 import MyImage from "../../img/myImage.png";
 import Thumbsup from "../../img/thumbsup.png";
 import Crown from "../../img/crown.png";

@@ -24,7 +24,7 @@ const About = () => {
             Pursuing Computer Science and Engineering
             <br />
             - Haldia Institute of Technology
-            <br />- CGPA: 9.21
+            <br />- CGPA: 9.39 (Till 6th Semester)
           </li>
           <br />
           <li>
@@ -51,8 +51,8 @@ const About = () => {
         >
           <Card
             image={HeartEmoji}
-            heading={"Developer"}
-            details={"HTML5, CSS3, JS, ReactJS, Bootstrap, Git, Github"}
+            heading={"Development"}
+            details={"HTML, CSS, JS, ReactJS, Bootstrap, SQL, Git, Github"}
           />
         </motion.div>
         <motion.div
@@ -63,7 +63,7 @@ const About = () => {
           <Card
             image={Glasses}
             heading={"Programming"}
-            details={"C++, C, Python, Java, Competitive Programming."}
+            details={"C++, C, Python, Java"}
           />
         </motion.div>
         <motion.div
@@ -73,8 +73,8 @@ const About = () => {
         >
           <Card
             image={Humble}
-            heading={"Backend"}
-            details={"Structured Query Language, Oracle, Databases, MYSQL "}
+            heading={"Subjects"}
+            details={"Operating System, DBMS, Data Structures and Algorithms"}
           />
         </motion.div>
         <div

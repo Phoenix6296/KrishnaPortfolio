@@ -5,12 +5,14 @@ import Sharenetic from "../../img/sharenetic.png";
 import TicTacToe from "../../img/tictactoe.png";
 import Blackjack from "../../img/blackjack.png";
 import Coronavirus from "../../img/coronavirus.png";
+import SortingVisulaizer from "../../img/sortingvisualizer.png";
 import "swiper/css";
 import { themeContext } from "../../Context";
 
 const data = [
-  "https://covid19resourcer.vercel.app/",
+  "https://prosort.vercel.app/",
   "https://mitrajit.github.io/Sharenetic/",
+  "https://covid19resourcer.vercel.app/",
   "https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/",
   "https://phoenix6296.github.io/Blackjack-Card-Game/",
 ];
@@ -39,7 +41,9 @@ const Portfolio = () => {
             >
               <img
                 src={
-                  item === "https://covid19resourcer.vercel.app/"
+                  item === "https://prosort.vercel.app/"
+                    ? SortingVisulaizer
+                    : item === "https://covid19resourcer.vercel.app/"
                     ? Coronavirus
                     : item === "https://mitrajit.github.io/Sharenetic/"
                     ? Sharenetic
@@ -48,7 +52,7 @@ const Portfolio = () => {
                     ? TicTacToe
                     : Blackjack
                 }
-                alt="project"
+                alt="projects"
               />
             </a>
           </SwiperSlide>

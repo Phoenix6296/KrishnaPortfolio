@@ -25,7 +25,7 @@ const Works = () => {
         link="https://www.volteomaritime.com/"
         cName="Volteo Maritime"
         list1="Presently Working"
-        list2="Tech Stack used HTML, CSS, JS, Typescript, ReactJS"
+        list2="Tech Stack used HTML, CSS, JS, ReactJS, Cypress"
         list3="Framework used Tailwind CSS."
         list4="Working with brilliant team."
         list5="More things to be explored..."

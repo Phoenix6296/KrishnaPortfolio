@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="footer">
       <img src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>krishnabiswakarm2001@gmail.com</span>
+        <span>krishnabiswakarmsc@gmail.com</span>
         {/* <span>+91-6296579878</span> */}
         <div className="f-icons">
           <a
@@ -56,7 +56,9 @@ const Footer = () => {
         <Link spy={true} to="Navbar" smooth={true} id="top-arrow">
           <Top color="white" size="3rem" />
         </Link>
-        <span>Made with &hearts; by Krishna Biswakarma</span>
+        <span>
+          Made with <span id="red-heart">&hearts;</span> by Krishna Biswakarma
+        </span>
       </div>
     </div>
   );

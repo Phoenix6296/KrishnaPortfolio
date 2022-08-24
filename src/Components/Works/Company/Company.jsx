@@ -1,7 +1,6 @@
 import React from "react";
 import "./Company.css";
 import { motion } from "framer-motion";
-// import ReactJS from "@iconscout/react-unicons/icons/uil-react";
 
 const Company = (props) => {
   const Skill1 = props.skill1;
@@ -35,15 +34,13 @@ const Company = (props) => {
           <br />
           <li>{props.list5}</li>
         </ul>
-        {/* <button className="button s-button">Hire Me</button> */}
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="w-right">
         <motion.div
-          initial={{ rotate: 45 }}
-          whileInView={{ rotate: 0 }}
-          viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
+          //Keep rotating the div around the Y-axis in same direction forever
+          animate={{ rotate: [0, 360, 0] }}
+          transition={{ duration: 20, type: "spring", yoyo: Infinity }}
           className="w-mainCircle"
         >
           <div className="w-secCircle" style={{ background: "#00d8ff" }}>

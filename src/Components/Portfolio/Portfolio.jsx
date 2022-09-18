@@ -13,8 +13,8 @@ const data = [
   "https://prosort.vercel.app/",
   "https://mitrajit.github.io/Sharenetic/",
   "https://covid19resourcer.vercel.app/",
-  "https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/",
-  "https://phoenix6296.github.io/Blackjack-Card-Game/",
+  // "https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/",
+  // "https://phoenix6296.github.io/Blackjack-Card-Game/",
 ];
 
 const Portfolio = () => {

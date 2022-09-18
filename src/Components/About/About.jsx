@@ -24,7 +24,7 @@ const About = () => {
             Pursuing Computer Science and Engineering
             <br />
             - Haldia Institute of Technology
-            <br />- CGPA: 9.39 (Till 6th Semester)
+            <br />- CGPA: 9.27 (Till 6th Semester)
           </li>
           <br />
           <li>
@@ -63,7 +63,7 @@ const About = () => {
           <Card
             image={Glasses}
             heading={"Programming"}
-            details={"C++, C, Python, Java"}
+            details={"C++, Java"}
           />
         </motion.div>
         <motion.div

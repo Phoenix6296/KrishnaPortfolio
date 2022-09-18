@@ -24,18 +24,18 @@ const Works = () => {
       <Company
         link="https://www.volteomaritime.com/"
         cName="Volteo Maritime"
-        list1="Presently Working"
-        list2="Tech Stack used HTML, CSS, JS, ReactJS, Cypress"
-        list3="Framework used Tailwind CSS."
-        list4="Working with brilliant team."
-        list5="More things to be explored..."
+        list1="Tech Stack used HTML, CSS, JS, ReactJS"
+        list2="Assisted Senior developers in their tasks."
+        list3="Learned team coordination."
+        list4="Learned to read the documentation."
+        list5="Learned to figure out and fix bugs in a large codebase."
         skill1={ReactJS}
         skill2={HTML}
         skill3={JS}
-        skill4={Tailwind}
-        skill5={TS}
+        skill4={Bootstrap}
+        skill5={CSS}
       />
-      <Company
+      {/* <Company
         link="https://www.digitalboxitin.com/"
         cName="DigitalBoxItIn"
         list1="Responsible for handling the Front-End of the Wesbite."
@@ -48,7 +48,7 @@ const Works = () => {
         skill3={JS}
         skill4={Bootstrap}
         skill5={CSS}
-      />
+      /> */}
     </div>
   );
 };

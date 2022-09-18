@@ -45,8 +45,8 @@ const About = () => {
       </div>
       <div className="cards">
         <motion.div
-          whileInView={{ scale: [0.8, 1] }}
-          transition={{ duration: 1, type: "spring" }}
+          // whileInView={{ scale: [0.8, 1] }}
+          // transition={{ duration: 1, type: "spring" }}
           style={{ left: "14rem" }}
         >
           <Card
@@ -56,19 +56,19 @@ const About = () => {
           />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0.8, 1] }}
-          transition={{ duration: 1, type: "spring" }}
+          // whileInView={{ scale: [0.8, 1] }}
+          // transition={{ duration: 1, type: "spring" }}
           style={{ left: "-1rem", top: "12rem" }}
         >
           <Card
             image={Glasses}
             heading={"Programming"}
-            details={"C++, Java"}
+            details={"C++, Java, Object Oriented Programming"}
           />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0.8, 1] }}
-          transition={{ duration: 1, type: "spring" }}
+          // whileInView={{ scale: [0.8, 1] }}
+          // transition={{ duration: 1, type: "spring" }}
           style={{ left: "14rem", top: "19rem" }}
         >
           <Card

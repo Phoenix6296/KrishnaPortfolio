@@ -40,28 +40,53 @@ const Company = (props) => {
         <motion.div
           //Keep rotating the div around the Y-axis in same direction forever
           animate={{ rotate: [0, 360, 0] }}
-          transition={{ duration: 20, type: "spring", yoyo: Infinity }}
+          transition={{ duration: 20, type: "ease", yoyo: Infinity }}
           className="w-mainCircle"
         >
-          <div className="w-secCircle" style={{ background: "#00d8ff" }}>
+          <motion.div
+            animate={{ rotate: [360, 0, 360] }}
+            transition={{ duration: 20, type: "ease", yoyo: Infinity }}
+            className="w-secCircle"
+            style={{ background: "#00d8ff" }}
+          >
             <Skill1 color="white" size="4rem" />
-          </div>
-          <div className="w-secCircle" style={{ background: "#D7492F" }}>
+          </motion.div>
+          <motion.div
+            animate={{ rotate: [360, 0, 360] }}
+            transition={{ duration: 20, type: "ease", yoyo: Infinity }}
+            className="w-secCircle"
+            style={{ background: "#D7492F" }}
+          >
             <img src={Skill2} alt="" width="500%" height="500%" />
-          </div>
-          <div className="w-secCircle" style={{ background: "#F7E04B" }}>
+          </motion.div>
+          <motion.div
+            animate={{ rotate: [360, 0, 360] }}
+            transition={{ duration: 20, type: "ease", yoyo: Infinity }}
+            className="w-secCircle"
+            style={{ background: "#F7E04B" }}
+          >
             <Skill3
               color="black"
               size="4rem"
               style={{ background: "#F7E04B" }}
             />
-          </div>
-          <div className="w-secCircle" style={{ background: "#2D394A" }}>
+          </motion.div>
+          <motion.div
+            animate={{ rotate: [360, 0, 360] }}
+            transition={{ duration: 20, type: "ease", yoyo: Infinity }}
+            className="w-secCircle"
+            style={{ background: "#2D394A" }}
+          >
             <img src={Skill4} alt="" />
-          </div>
-          <div className="w-secCircle" style={{ background: "#2677BD" }}>
+          </motion.div>
+          <motion.div
+            animate={{ rotate: [360, 0, 360] }}
+            transition={{ duration: 20, type: "ease", yoyo: Infinity }}
+            className="w-secCircle"
+            style={{ background: "#2677BD" }}
+          >
             <img src={Skill5} alt="" width="500%" height="500%" />
-          </div>
+          </motion.div>
         </motion.div>
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>

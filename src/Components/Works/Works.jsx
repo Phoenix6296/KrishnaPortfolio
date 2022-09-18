@@ -11,8 +11,8 @@ import CSS from "../../img/css.png";
 import HTML from "../../img/html.png";
 
 // Company 2
-import Tailwind from "../../img/tailwind.png";
-import TS from "../../img/ts.png";
+// import Tailwind from "../../img/tailwind.png";
+// import TS from "../../img/ts.png";
 
 const Works = () => {
   const theme = useContext(themeContext);

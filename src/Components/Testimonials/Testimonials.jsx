@@ -7,9 +7,16 @@ import "swiper/css/pagination";
 import Mitrajit from "../../img/mitrajit.png";
 import Kushankur from "../../img/kushankur.jpeg";
 import Sudeep from "../../img/sudeep.jpeg";
+import Abdul from "../../img/abdul.jpeg";
 
 const Testimonials = () => {
   const clients = [
+    {
+      img: Abdul,
+      name: "Abdul Ghani",
+      review:
+        "Krishna has outstanding work ethics, he is a quick learner and always thinks creatively. He actively contributed to the product. I was glad to have him in my team.",
+    },
     {
       img: Mitrajit,
       name: "Mitrajit Chandra Chandra",

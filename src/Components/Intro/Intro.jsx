@@ -64,7 +64,7 @@ const Intro = () => {
             <Linkedin color="var(--orange)" size="3rem" />
           </a>
           <a
-            href="https://twitter.com/Krishna49862681"
+            href="https://twitter.com/krishnaa_kanha"
             target="_blank"
             rel="noreferrer"
           >

@@ -1,9 +1,10 @@
 import React from "react";
 import "./Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import Mitrajit from "../../img/mitrajit.png";
 import Kushankur from "../../img/kushankur.jpeg";
 import Sudeep from "../../img/sudeep.jpeg";
@@ -53,9 +54,10 @@ const Testimonials = () => {
       </div>
 
       <Swiper
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         slidesPerView={1}
+        autoplay={{ delay: 3000 }}
       >
         {clients.map((client, index) => {
           return (

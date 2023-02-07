@@ -11,11 +11,15 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false);
+
   useEffect(() => {
-    setTimeout(function () {
+    setTimeout(() => {
       setDone(false);
-    }, 10000);
-  });
+      setEmail("");
+      setName("");
+      setMessage("");
+    }, 2000);
+  }, [done]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -42,13 +46,10 @@ const Contact = () => {
   };
 
   let audio = new Audio(Click);
-  const audioPlay = () => {
+  const submitForm = () => {
     if (name !== "" && validateEmail(email) !== false && message !== "") {
       audio.play();
       setDone(true);
-      setName("");
-      setEmail("");
-      setMessage("");
     }
   };
   return (
@@ -103,9 +104,9 @@ const Contact = () => {
             type="submit"
             value="Send"
             className="button"
-            onClick={audioPlay}
+            onClick={submitForm}
           />
-          {done ? <span>{"Thanks for contacting!"}</span> : <></>}
+          {done ? <span>{"Thanks for contacting!"}</span> : null}
 
           <div
             className="blur c-blur1"

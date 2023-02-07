@@ -5,13 +5,19 @@ import { useRef } from "react";
 import { themeContext } from "../../Context";
 import Click from "../../Assets/Sounds/mouse-click.mp3";
 import validator from "validator";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false);
+  const [recaptchaResponse, setRecaptchaResponse] = useState(null);
+  const onRecaptchaLoad = (recaptcha) => {
+    setRecaptchaResponse(recaptcha);
+  };
 
+  //Removing input from form after send button is pressed.
   useEffect(() => {
     setTimeout(() => {
       setDone(false);
@@ -35,7 +41,6 @@ const Contact = () => {
       });
   };
 
-  //Removing input from form after send button is pressed.
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -47,6 +52,9 @@ const Contact = () => {
 
   let audio = new Audio(Click);
   const submitForm = () => {
+    if (recaptchaResponse) {
+      recaptchaResponse.execute();
+    }
     if (name !== "" && validateEmail(email) !== false && message !== "") {
       audio.play();
       setDone(true);
@@ -100,7 +108,13 @@ const Contact = () => {
               setMessage(e.target.value);
             }}
           />
-          <div class="g-recaptcha" data-sitekey="6LfInF4kAAAAAL3hBvD77kIpvOA1lQneD2oFZaUJ"></div>
+          <ReCAPTCHA
+            sitekey="6LfInF4kAAAAAL3hBvD77kIpvOA1lQneD2oFZaUJ"
+            onLoad={onRecaptchaLoad}
+            onVerify={(response) => {
+              setRecaptchaResponse(response);
+            }}
+          />
           <input
             type="submit"
             value="Send"

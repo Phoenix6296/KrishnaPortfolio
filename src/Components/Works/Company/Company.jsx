@@ -11,8 +11,6 @@ const Company = (props) => {
   return (
     <div className="works" id="Internship">
       <div className="awesome internship">
-        {/* <span style={{ color: darkMode ? "white" : "" }}>Internship</span>
-        <span>Experience</span> */}
         <span></span>
         <span></span>
         <span>
@@ -31,8 +29,6 @@ const Company = (props) => {
           <li>{props.list3}</li>
           <br />
           <li>{props.list4}</li>
-          <br />
-          <li>{props.list5}</li>
         </ul>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
@@ -56,10 +52,10 @@ const Company = (props) => {
               style={{ background: "#F7E04B" }}
             />
           </div>
-          <div className="w-secCircle" style={{ background: "#2D394A" }}>
-            <img src={Skill4} alt="" />
+          <div className="w-secCircle">
+            <img src={Skill4} alt="" width="400%" />
           </div>
-          <div className="w-secCircle" style={{ background: "#2677BD" }}>
+          <div className="w-secCircle" style={{ background: "#FFFFFF" }}>
             <img src={Skill5} alt="" width="500%" height="500%" />
           </div>
         </motion.div>

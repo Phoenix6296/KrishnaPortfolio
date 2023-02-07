@@ -24,7 +24,7 @@ const About = () => {
             Pursuing Computer Science and Engineering
             <br />
             - Haldia Institute of Technology
-            <br />- CGPA: 9.39 (Till 6th Semester)
+            <br />- CGPA: 9.28 (Till 7th Semester)
           </li>
           <br />
           <li>

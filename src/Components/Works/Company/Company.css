@@ -1,3 +1,6 @@
+.internship{
+    flex: 0.7;
+}
 .works {
     display: flex;
     height: 70vh;
@@ -55,7 +58,6 @@
     top: 13rem;
     left: 6rem;
 }
-
 .w-secCircle {
     width: 6rem;
     height: 6rem;

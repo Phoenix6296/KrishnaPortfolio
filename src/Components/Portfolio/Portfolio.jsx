@@ -3,18 +3,16 @@ import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Sharenetic from "../../img/sharenetic.png";
 import TicTacToe from "../../img/tictactoe.png";
-import Blackjack from "../../img/blackjack.png";
 import Coronavirus from "../../img/coronavirus.png";
 import SortingVisulaizer from "../../img/sortingvisualizer.png";
 import "swiper/css";
 import { themeContext } from "../../Context";
 
 const data = [
-  "https://prosort.vercel.app/",
   "https://mitrajit.github.io/Sharenetic/",
+  "https://prosort.vercel.app/",
   "https://covid19resourcer.vercel.app/",
-  "https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/",
-  "https://phoenix6296.github.io/Blackjack-Card-Game/",
+  "https://phoenix6296.github.io/Tic-Tac-Toe/",
 ];
 
 const Portfolio = () => {
@@ -48,9 +46,9 @@ const Portfolio = () => {
                     : item === "https://mitrajit.github.io/Sharenetic/"
                     ? Sharenetic
                     : item ===
-                      "https://phoenix6296.github.io/UDC_KrishnaBiswakarma_WebDevelopment/"
+                      "https://phoenix6296.github.io/Tic-Tac-Toe/"
                     ? TicTacToe
-                    : Blackjack
+                    : null
                 }
                 alt="projects"
               />

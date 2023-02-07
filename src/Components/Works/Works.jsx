@@ -2,17 +2,14 @@ import React, { useContext } from "react";
 import "./Works.css";
 import { themeContext } from "../../Context";
 import Company from "./Company/Company";
-
-// Company 1
+import Cypress from '../../img/cypress_logo.webp'
+import MUI from '../../img/mui_logo.png'
 import ReactJS from "@iconscout/react-unicons/icons/uil-react";
 import JS from "@iconscout/react-unicons/icons/uil-java-script";
 import Bootstrap from "../../img/bootstrap.png";
 import CSS from "../../img/css.png";
 import HTML from "../../img/html.png";
-
-// Company 2
-import Tailwind from "../../img/tailwind.png";
-import TS from "../../img/ts.png";
+// import Tailwind from "../../img/tailwind.png";
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -24,25 +21,23 @@ const Works = () => {
       <Company
         link="https://www.volteomaritime.com/"
         cName="Volteo Maritime"
-        list1="Presently Working"
-        list2="Tech Stack used HTML, CSS, JS, ReactJS, Cypress"
-        list3="Framework used Tailwind CSS."
-        list4="Working with brilliant team."
-        list5="More things to be explored..."
+        list1="Automated the task by creating the template for the client's wayship using JSON and JS."
+        list2="Created the custom signature canvas component using ReactJS."
+        list3="Wrote routine unit test for the templates in Cypress."
+        list4="Tech Stack used: HTML, CSS Modules, JS, ReactJS, Material UI, Cypress."
         skill1={ReactJS}
         skill2={HTML}
         skill3={JS}
-        skill4={Tailwind}
-        skill5={TS}
+        skill4={MUI}
+        skill5={Cypress}
       />
       <Company
         link="https://www.digitalboxitin.com/"
         cName="DigitalBoxItIn"
-        list1="Responsible for handling the Front-End of the Wesbite."
-        list2="Tech Stack used HTML, CSS, JS, ReactJS."
-        list3="Framework used Bootstrap."
-        list4="Learnt to Work in a Team."
-        list5="Learnt Time Management."
+        list1="Worked on creating the Company's Home Page using ReactJS and Material UI."
+        list2="Improved the loading time of the website."
+        list3="Worked on various Test Projects for Businesses."
+        list4="Tech Stack: HTML, CSS, JS, ReactJS, MaterialUI, and Bootstrap."
         skill1={ReactJS}
         skill2={HTML}
         skill3={JS}

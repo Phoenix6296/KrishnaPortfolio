@@ -65,6 +65,10 @@
     font-size: small !important;
 }
 
+.testimonial>:nth-child(4) {
+    font-size: medium !important;
+}
+
 .t-wrapper .swiper {
     width: 100%;
     height: 70%;

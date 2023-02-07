@@ -20,6 +20,13 @@ const Testimonials = () => {
         "Krishna has outstanding work ethics, he is a quick learner and always thinks creatively. He actively contributed to the product. I was glad to have him in my team.",
     },
     {
+      img: Sudeep,
+      name: "Sudeep Deyondi",
+      designation: "Software Engineer @DigitalBoxItIn",
+      review:
+        "He has successfully undertaken and completed multiple projects and contributed significantly to success. His dedication to the team is quiet impressive. He is a talented and highly motivated developer with can-do attitude.",
+    },
+    {
       img: Mitrajit,
       name: "Mitrajit Chandra Chandra",
       designation: "Backend Engineer @Listed Fans",
@@ -32,13 +39,6 @@ const Testimonials = () => {
       designation: "Advance App Software Engineer @Accenture",
       review:
         "Had a great time working  with Krishna Biswakarma on a same project. Got to learn great new skills. I must say he is very knowledgeable and helpful and got good leadership skills. Was really a pleasure working with such a teamate.",
-    },
-    {
-      img: Sudeep,
-      name: "Sudeep Deyondi",
-      designation: "Software Engineer @DigitalBoxItIn",
-      review:
-        "He has successfully undertaken and completed multiple projects and contributed significantly to success. His dedication to the team is quiet impressive. He is a talented and highly motivated developer with can-do attitude.",
     },
   ];
   return (

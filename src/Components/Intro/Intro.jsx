@@ -74,8 +74,6 @@ const Intro = () => {
       </div>
 
       <div className="i-right">
-        {/* <img src={Blob1} alt="" id="blob1" />
-        <img src={Blob2} alt="" id="blob2" /> */}
         <img src={MyImage} alt="" />
         <motion.img
           initial={{ left: "-20%" }}

@@ -52,7 +52,9 @@ const About = () => {
           <Card
             image={HeartEmoji}
             heading={"Development"}
-            details={"HTML, CSS, JS, ReactJS, Bootstrap, SQL, Git, Github"}
+            details={
+              "HTML, CSS, Javascript, ReactJS, Bootstrap, MaterialUI, SQL, Vercel, Cypress, Git, Github."
+            }
           />
         </motion.div>
         <motion.div
@@ -62,8 +64,8 @@ const About = () => {
         >
           <Card
             image={Glasses}
-            heading={"Programming"}
-            details={"C++, C, Python, Java"}
+            heading={"Programming/Scripting Languages"}
+            details={"C++, C, Javascript, Java."}
           />
         </motion.div>
         <motion.div

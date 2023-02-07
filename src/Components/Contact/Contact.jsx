@@ -100,6 +100,7 @@ const Contact = () => {
               setMessage(e.target.value);
             }}
           />
+          <div class="g-recaptcha" data-sitekey="6LfInF4kAAAAAL3hBvD77kIpvOA1lQneD2oFZaUJ"></div>
           <input
             type="submit"
             value="Send"

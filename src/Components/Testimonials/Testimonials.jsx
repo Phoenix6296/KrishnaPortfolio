@@ -5,10 +5,10 @@ import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import Mitrajit from "../../img/mitrajit.png";
-import Kushankur from "../../img/kushankur.jpeg";
-import Sudeep from "../../img/sudeep.jpeg";
-import Abdul from "../../img/abdul.jpeg";
+import Mitrajit from "../../Assets/Images/mitrajit_pic.webp";
+import Kushankur from "../../Assets/Images/kushankur_pic.webp";
+import Sudeep from "../../Assets/Images/sudeep_pic.webp";
+import Abdul from "../../Assets/Images/abdul_pic.webp";
 
 const Testimonials = () => {
   const clients = [

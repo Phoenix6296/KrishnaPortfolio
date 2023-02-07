@@ -2,14 +2,13 @@ import React, { useContext } from "react";
 import "./Works.css";
 import { themeContext } from "../../Context";
 import Company from "./Company/Company";
-import Cypress from '../../img/cypress_logo.webp'
-import MUI from '../../img/mui_logo.png'
+import Cypress from '../../Assets/Images/cypress_logo.webp'
+import MUI from '../../Assets/Images/mui_logo.webp'
 import ReactJS from "@iconscout/react-unicons/icons/uil-react";
 import JS from "@iconscout/react-unicons/icons/uil-java-script";
-import Bootstrap from "../../img/bootstrap.png";
-import CSS from "../../img/css.png";
-import HTML from "../../img/html.png";
-// import Tailwind from "../../img/tailwind.png";
+import Bootstrap from "../../Assets/Images/bootstrap_logo.webp";
+import CSS from "../../Assets/Images/css_logo.webp";
+import HTML from "../../Assets/Images/html_logo.webp";
 
 const Works = () => {
   const theme = useContext(themeContext);

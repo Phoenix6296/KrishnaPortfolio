@@ -3,10 +3,10 @@ import "./Intro.css";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
-import MyImage from "../../img/myImage.png";
-import Thumbsup from "../../img/thumbsup.png";
-import Crown from "../../img/crown.png";
-import Glassesemoji from "../../img/glassesemoji.png";
+import MyImage from "../../Assets/Images/hero_image.webp";
+import Thumbsup from "../../Assets/Images/thumbsup_emoji.webp";
+import Crown from "../../Assets/Images/crown.webp";
+import SideFaceEmoji from "../../Assets/Images/side_face_emoji.webp";
 import FloatingDiv from "./FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -79,7 +79,7 @@ const Intro = () => {
           initial={{ left: "-20%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
-          src={Glassesemoji}
+          src={SideFaceEmoji}
           alt=""
           className="floating-div"
         />

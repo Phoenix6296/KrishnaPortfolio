@@ -3,7 +3,7 @@ import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { themeContext } from "../../Context";
-import Click from "../../sounds/mouse-click.mp3";
+import Click from "../../Assets/Sounds/mouse-click.mp3";
 import validator from "validator";
 
 const Contact = () => {

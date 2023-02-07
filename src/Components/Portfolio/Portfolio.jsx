@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Sharenetic from "../../img/sharenetic.png";
-import TicTacToe from "../../img/tictactoe.png";
-import Coronavirus from "../../img/coronavirus.png";
-import SortingVisulaizer from "../../img/sortingvisualizer.png";
+import Sharenetic from "../../Assets/Images/sharenetic_banner.webp";
+import TicTacToe from "../../Assets/Images/tictactoe_banner.webp";
+import Coronavirus from "../../Assets/Images/coronavirus_project_banner.webp";
+import SortingVisulaizer from "../../Assets/Images/sortingvisualizer_banner.webp";
 import "swiper/css";
 import { themeContext } from "../../Context";
 

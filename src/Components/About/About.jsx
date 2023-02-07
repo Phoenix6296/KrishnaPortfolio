@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./About.css";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import HeartFaceEmoji from "../../Assets/Images/heart_face_emoji.webp";
+import FrontFaceEmoji from "../../Assets/Images/front_face_emoji.webp";
+import HumbleFaceEmoji from "../../Assets/Images/humble_face_emoji.webp";
 import Card from "./Card/Card";
 import Resume from "./Resume.pdf";
 import { themeContext } from "../../Context";
@@ -50,7 +50,7 @@ const About = () => {
           style={{ left: "14rem" }}
         >
           <Card
-            image={HeartEmoji}
+            image={HeartFaceEmoji}
             heading={"Development"}
             details={
               "HTML, CSS, Javascript, ReactJS, Bootstrap, MaterialUI, SQL, Vercel, Cypress, Git, Github."
@@ -63,7 +63,7 @@ const About = () => {
           style={{ left: "-1rem", top: "12rem" }}
         >
           <Card
-            image={Glasses}
+            image={FrontFaceEmoji}
             heading={"Programming/Scripting Languages"}
             details={"C++, C, Javascript, Java."}
           />
@@ -74,7 +74,7 @@ const About = () => {
           style={{ left: "14rem", top: "19rem" }}
         >
           <Card
-            image={Humble}
+            image={HumbleFaceEmoji}
             heading={"Subjects"}
             details={"Operating System, DBMS, Data Structures and Algorithms"}
           />

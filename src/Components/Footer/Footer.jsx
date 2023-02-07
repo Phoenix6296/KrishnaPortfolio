@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Wave from "../../img/wave.png";
+import Wave from "../../Assets/Images/wave_bg.webp";
 import Instagram from "@iconscout/react-unicons/icons/uil-instagram";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook";

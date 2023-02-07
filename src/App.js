@@ -11,6 +11,10 @@ import Footer from "./Components/Footer/Footer";
 import { themeContext } from './Context'
 import { useContext } from "react";
 import Analytics from './Analytics'
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-44YNXXL5LC";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const theme = useContext(themeContext)

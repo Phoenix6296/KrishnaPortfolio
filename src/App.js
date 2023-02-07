@@ -10,10 +10,12 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import { themeContext } from './Context'
 import { useContext } from "react";
+import Analytics from './Analytics'
 
 function App() {
   const theme = useContext(themeContext)
   const darkMode = theme.state.darkMode;
+  Analytics();
   return (
     <div className="App"
       style={{ background: darkMode ? 'black' : '', color: darkMode ? 'white' : '' }}

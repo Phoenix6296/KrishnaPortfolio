@@ -8,28 +8,33 @@ import validator from "validator";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+  const form = useRef();
+  const captchaRef = useRef(null);
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  const form = useRef();
   const [done, setDone] = useState(false);
-  const [recaptchaResponse, setRecaptchaResponse] = useState(null);
-  const onRecaptchaLoad = (recaptcha) => {
-    setRecaptchaResponse(recaptcha);
-  };
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [captcha, setCaptcha] = useState(false);
+  const audio = new Audio(Click);
   //Removing input from form after send button is pressed.
   useEffect(() => {
+    const token = captchaRef.current.getValue();
+    captchaRef.current.reset();
+    console.log(token);
+    setEmail("");
+    setName("");
+    setMessage("");
     setTimeout(() => {
       setDone(false);
-      setEmail("");
-      setName("");
-      setMessage("");
-      setRecaptchaResponse(null);
-    }, 2000);
+    }, 5000);
   }, [done]);
 
-  const sendEmail = (e) => {
+  const onSubmitHandler = (e) => {
     e.preventDefault();
+    if (!captcha) return;
+    audio.play();
     emailjs
       .sendForm(
         "phoenix",
@@ -42,25 +47,11 @@ const Contact = () => {
       });
   };
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
   const validateEmail = () => {
     if (validator.isEmail(email)) return true;
     else return false;
   };
 
-  let audio = new Audio(Click);
-  const submitForm = () => {
-    if (recaptchaResponse) {
-      recaptchaResponse.execute();
-    }
-    if (name !== "" && validateEmail(email) !== false && message !== "") {
-      audio.play();
-      setDone(true);
-    }
-  };
   return (
     <div className="contact-form" id="Contact">
       <div className="w-left">
@@ -75,7 +66,7 @@ const Contact = () => {
       </div>
 
       <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={onSubmitHandler}>
           <input
             type="text"
             name="user_name"
@@ -111,20 +102,13 @@ const Contact = () => {
           />
           <ReCAPTCHA
             sitekey="6LfInF4kAAAAAL3hBvD77kIpvOA1lQneD2oFZaUJ"
-            onLoad={onRecaptchaLoad}
-            onVerify={(response) => {
-              setRecaptchaResponse(response);
-            }}
+            ref={captchaRef}
+            onChange={() => setCaptcha(true)}
           />
-          <input
-            type="submit"
-            value="Send"
-            className="button"
-            onClick={submitForm}
-            disabled={!recaptchaResponse}
-          />
-          {done ? <span>{"Thanks for contacting!"}</span> : null}
-
+          <button type="submit" className="button">
+            Send
+          </button>
+          {captcha && done ? <span>{"Thanks for contacting!"}</span> : null}
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple" }}

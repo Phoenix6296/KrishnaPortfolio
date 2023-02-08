@@ -24,6 +24,7 @@ const Contact = () => {
       setEmail("");
       setName("");
       setMessage("");
+      setRecaptchaResponse(null);
     }, 2000);
   }, [done]);
 
@@ -120,6 +121,7 @@ const Contact = () => {
             value="Send"
             className="button"
             onClick={submitForm}
+            disabled={!recaptchaResponse}
           />
           {done ? <span>{"Thanks for contacting!"}</span> : null}
 

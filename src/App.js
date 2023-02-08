@@ -21,10 +21,7 @@ function App() {
   const darkMode = theme.state.darkMode;
   Analytics();
   return (
-    <div className="App"
-      style={{ background: darkMode ? 'black' : '', color: darkMode ? 'white' : '' }}
-
-    >
+    <div className="app" style={{ background: darkMode ? 'black' : '', color: darkMode ? 'white' : '' }}>
       <Navbar />
       <Intro />
       <About />

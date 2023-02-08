@@ -20,7 +20,7 @@
   -webkit-user-drag: none;
 }
 
-.App {
+.app {
   padding: 0.5rem 3.5rem;
   overflow: hidden;
   color: var(--black);

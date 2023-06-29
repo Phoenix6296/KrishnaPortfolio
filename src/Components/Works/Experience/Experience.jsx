@@ -13,7 +13,7 @@ const ach = [
     title2: "Projects",
   },
   {
-    text: "2",
+    text: "3",
     title1: "Startup",
     title2: "Experience",
   },

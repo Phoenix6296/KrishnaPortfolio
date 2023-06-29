@@ -4,7 +4,6 @@ import HeartFaceEmoji from "../../Assets/Images/heart_face_emoji.webp";
 import FrontFaceEmoji from "../../Assets/Images/front_face_emoji.webp";
 import HumbleFaceEmoji from "../../Assets/Images/humble_face_emoji.webp";
 import Card from "./Card/Card";
-import Resume from "./Resume.pdf";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 
@@ -38,7 +37,13 @@ const About = () => {
           </li>
           <br />
         </ul>
-        <a href={Resume} download>
+        <a
+          href={
+            "https://drive.google.com/file/d/1u7acqlOurWaU5ubPMboc4h2ia0iaHoWv/view?usp=sharing"
+          }
+          target="_blank"
+          rel="noreferrer"
+        >
           <button className="button s-button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>

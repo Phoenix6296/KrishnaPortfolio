@@ -6,6 +6,7 @@ import HumbleFaceEmoji from "../../Assets/Images/humble_face_emoji.webp";
 import Card from "./Card/Card";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
+import DownloadIcon from "@iconscout/react-unicons/icons/uil-file-download";
 
 const About = () => {
   const theme = useContext(themeContext);
@@ -20,10 +21,10 @@ const About = () => {
         <span></span>
         <ul>
           <li>
-            Pursuing Computer Science and Engineering
+            B.Tech in Computer Science and Engineering
             <br />
             - Haldia Institute of Technology
-            <br />- CGPA: 9.28 (Till 7th Semester)
+            <br />- CGPA: 9.3
           </li>
           <br />
           <li>
@@ -37,14 +38,10 @@ const About = () => {
           </li>
           <br />
         </ul>
-        <a
-          href={
-            "https://drive.google.com/file/d/1u7acqlOurWaU5ubPMboc4h2ia0iaHoWv/view?usp=sharing"
-          }
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="button s-button">Download CV</button>
+        <a href={"https://oia.bio/resume"} target="_blank" rel="noreferrer">
+          <button className="button s-button">
+            {React.createElement(DownloadIcon)} Resume
+          </button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>

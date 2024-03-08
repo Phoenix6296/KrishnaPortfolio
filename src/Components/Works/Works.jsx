@@ -12,6 +12,9 @@ import NextJSIcon from "../../Assets/Images/nextjs_logo.webp";
 import TailwindLogo from "../../Assets/Images/tailwind_logo.webp";
 import JotaiLogo from "../../Assets/Images/jotai_logo.webp";
 import NodeJSLogo from "../../Assets/Images/node_logo.webp";
+import JavaLogo from "../../Assets/Images/java_logo.webp";
+import MySqlLogo from "../../Assets/Images/mysql_logo.webp";
+import ReduxLogo from "../../Assets/Images/redux_logo.webp";
 import { themeContext } from "../../Context";
 
 const Works = () => {
@@ -19,6 +22,44 @@ const Works = () => {
   const darkMode = theme.state.darkMode;
 
   const companies = [
+    {
+      link: "https://www2.deloitte.com/us/en.html",
+      companyName: "Deloitte",
+      tasks: [
+        "Project Leadership: Took charge of a pivotal project for one of the world's foremost hotel chains, conducting a comprehensive review of the existing codebase to identify areas for enhancement and integration.",
+        "Landing Page Development: Spearheaded the development and testing of a new landing page, focusing on optimizing user experience and engagement, leading to an improved first impression for site visitors.",
+        "API Integration: Utilized APIs to seamlessly integrate Google Maps into the client’s platform, enhancing functionality and user interactivity by providing location-based services.",
+      ],
+      skills: [
+        {
+          type: "image",
+          component: NextJSIcon,
+          props: { color: "white", size: "4rem" },
+          background: "#00d8ff",
+        },
+        {
+          type: "image",
+          component: MySqlLogo,
+          props: { width: "400%", height: "400%" },
+        },
+        {
+          type: "icon",
+          component: JavaScriptIcon,
+          props: { color: "black", size: "4rem" },
+          background: "#F7E04B",
+        },
+        {
+          type: "image",
+          component: JavaLogo,
+          props: { width: "600%" },
+        },
+        {
+          type: "image",
+          component: ReduxLogo,
+          props: { width: "300%", height: "300%" },
+        },
+      ],
+    },
     {
       link: "https://www.openinapp.com/",
       companyName: "OpeninApp",
@@ -144,8 +185,7 @@ const Works = () => {
 
   return (
     <div className="awesome w-wrapper" id="Internship">
-      <span style={{ color: darkMode ? "white" : "" }}>Internship</span>
-      <span>Experience</span>
+      <span style={{ color: darkMode ? "white" : "" }}>Experiences</span>
       {companies.map((company, index) => (
         <Company
           key={index}

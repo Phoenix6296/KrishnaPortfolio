@@ -3,7 +3,7 @@ import "./Experience.css";
 
 const ach = [
   {
-    text: "1",
+    text: "2",
     title1: "Years",
     title2: "Experience",
   },
